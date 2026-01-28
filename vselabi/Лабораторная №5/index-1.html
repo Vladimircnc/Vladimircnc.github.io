@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Информация о заведении </h1>
+    <fieldset>
+        <legend>Основная информация</legend>
+        <a>Название заведения <input type="text" name="" id=""></a>
+        <a>Адрес заведения <input type="text" name="" id=""></a>
+        <a>Направление заведения 
+            <select>
+                <option value="Общепит">Общепит</option>
+                <option value="Ресторан">Ресторан</option>
+                <option value="Столовая">Столовая</option>
+                <option value="Пекарня">Пекарня</option>
+            </select>
+        </a>
+    </fieldset>
+    <fieldset>
+        <legend>Меню заведений</legend>
+        <h3>Общепит</h3>
+            <a><input type="radio" id="" name="1test" >Бургеры "от 50 до 500 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Нагетсы "от 50 до 250 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Ролл "от 150 до 500 рублей"</a><br>
+
+        <h3>Ресторан</h3>
+            <a><input type="radio" id="" name="1test" >ВИП БЛЮДА "от 1000 до 5000 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Комплексные обеды "от 300 до 700 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Салаты "от 150 до 400 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Горячие блюда "от 200 до 1000 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Супы "от 200 до 1000 рублей"</a>
+
+        <h3>Столовая</h3>
+            <a><input type="radio" id="" name="1test" >Комплексные завтраки "от 200 до 500 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Комплексные обеды "от 250 до 600 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Супы "от 150 до 500 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Горячие блюда"от 100 до 600"</a><br>
+            <a><input type="radio" id="" name="1test" >Салаты "от 50 до 200 рублей"</a>
+
+        <h3>Пекарня</h3>
+            <a><input type="radio" id="" name="1test" >Выпечка холодная (булочки, пончики) "от 50 до 150 рублей"</a><br>
+            <a><input type="radio" id="" name="1test" >Выпечка горячая (Пицца, сосиски в тесте, самса и т.д.)"от 100 до 250 рублей"</a><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительные функции</legend>
+            <a><input type="checkbox" name="" id="">Забронировать стол (Ресторан, Столовая) 1000Р</a><br>
+            <a><input type="checkbox" name="" id="">Заказать на дом (Пекарня, Общепит) 100-150Р</a>
+    </fieldset>
+    <button>Назад</button>
+    <button>Продолжить</button>
+
+    <h1> Особые пожелания</h1> 
+    <fieldset>
+        <legend>Особые пожелания(необязательно)</legend>
+            <p>Диетические предпочтения (можно выбрать несколько, зажав Ctrl):</p>
+                <select multiple>
+                <option value="Беглютеновое">Беглютеновое</option>
+                <option value="Вегетарианское">Вегетарианское</option>
+                <option value="Веганское">Веганское</option>
+                <option value="Нет предпочтений">Нет предпочтений</option>
+                </select> <br>
+            <p>Дополнительные комментарии или пожелания:</p>
+        <input type="text" placeholder="Здесь вы можете оставить любые дополнительные пожелания..." id="">
+    </fieldset>
+        <a><input type="checkbox"> Я согласен с политикой конфиденциальности</a><br>
+    <button>Завершить регистра</button>
+</body>
+</html>

@@ -1,0 +1,318 @@
+body {
+            background-color: #fff;
+            color: #111;
+            min-height: 100vh;
+        }
+        
+        /* Верхнее меню Pinterest */
+        .pinterest-header {
+            background-color: #fff;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 16px 24px;
+        }
+        
+        .pinterest-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Логотип и навигация */
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .pinterest-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .pinterest-logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #e60023;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        
+        .pinterest-logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #e60023;
+        }
+        
+        .home-btn {
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+        }
+        
+        .home-btn:hover {
+            background-color: #333;
+        }
+        
+        /* Поисковая строка */
+        .nav-center {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 24px;
+        }
+        
+        .search-container {
+            position: relative;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #767676;
+            font-size: 18px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            border-radius: 24px;
+            border: none;
+            background-color: #efefef;
+            font-size: 16px;
+            outline: none;
+            transition: background-color 0.2s;
+        }
+        
+        .search-input:focus {
+            background-color: #e2e2e2;
+        }
+        
+        /* Правые элементы навигации */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .nav-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            color: #555;
+            position: relative;
+        }
+        
+        .nav-icon:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .notification-badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: #e60023;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        
+        .profile-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Боковое меню Pinterest */
+        .pinterest-sidebar {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 240px;
+            height: calc(100vh - 80px);
+            background-color: #fff;
+            padding: 24px 16px;
+            overflow-y: auto;
+            z-index: 900;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 32px;
+        }
+        
+        .sidebar-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #767676;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            padding-left: 8px;
+        }
+        
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            margin-bottom: 4px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            color: #111;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .sidebar-item:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .sidebar-item.active {
+            background-color: #e60023;
+            color: white;
+        }
+        
+        .sidebar-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        .active .sidebar-icon {
+            color: white;
+        }
+        
+        .sidebar-text {
+            font-size: 16px;
+        }
+        
+        /* Основная область контента */
+        .main-content {
+            margin-left: 240px;
+            margin-top: 80px;
+            padding: 32px;
+            background-color: #f9f9f9;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+        
+        .content-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111;
+        }
+        
+        .create-btn {
+            background-color: #e60023;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+        }
+        
+        .create-btn:hover {
+            background-color: #ad081b;
+        }
+        
+        /* Сетка пинов */
+        .pins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        
+        .pin-card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .pin-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pin-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .pin-info {
+            padding: 16px;
+        }
+        
+        .pin-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        
+        .pin-desc {
+            font-size: 14px;
+            color: #767676;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .pin-stats {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 14px;
+            color: #767676;
+        }
+        
+        .pin-stat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }

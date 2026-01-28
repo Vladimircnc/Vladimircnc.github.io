@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>лабораторная 7 (2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Верхнее меню Pinterest -->
+    <header class="pinterest-header">
+        <nav class="pinterest-nav">
+            <div class="nav-left">
+                <a href="#" class="pinterest-logo">
+                    <div class="pinterest-logo-icon">
+                        <i class="fas fa-p" style="color: white; font-size: 18px;"></i>
+                    </div>
+                    <div class="pinterest-logo-text">Pinterest</div>
+                </a>
+                
+                <button class="home-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Главная</span>
+                </button>
+            </div>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <div class="nav-icon">
+                    <i class="fas fa-bell"></i>
+                    <div class="notification-badge"></div>
+                </div>
+                
+                <div class="nav-icon">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                
+                <div class="nav-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="nav-icon">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Profile" class="profile-img">
+                </div>
+                
+                <div class="nav-icon">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Боковое меню -->
+    <aside class="pinterest-sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Навигация</div>
+            <a href="#" class="sidebar-item active">
+                <div class="sidebar-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="sidebar-text">Главная</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div class="sidebar-text">Обзор</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="sidebar-text">Подписки</div>
+            </a>
+        </div>
+        
+        <div class="sidebar-section">
+            <div class="sidebar-title">Персональное</div>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="sidebar-text">Профиль</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-image"></i>
+                </div>
+                <div class="sidebar-text">Пины</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="sidebar-text">Сохраненное</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="sidebar-text">Доски</div>
+            </a>
+        </div>
+        
+        <div class="sidebar-section">
+            <div class="sidebar-title">Темы</div>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="sidebar-text">Рецепты</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="sidebar-text">Мода</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="sidebar-text">Интерьер</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="sidebar-text">Путешествия</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="sidebar-text">Фитнес</div>
+            </a>
+        </div>
+        
+        <div class="sidebar-section">
+            <div class="sidebar-title">Инструменты</div>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="sidebar-text">Создать</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="sidebar-text">Настройки</div>
+            </a>
+            <a href="#" class="sidebar-item">
+                <div class="sidebar-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="sidebar-text">Помощь</div>
+            </a>
+        </div>
+    </aside>
+    
+    <!-- Основная область контента -->
+    <main class="main-content">
+        <div class="content-header">
+            <h1 class="content-title">Рекомендуемые пины</h1>
+            <button class="create-btn">
+                <i class="fas fa-plus"></i>
+                <span>Создать</span>
+            </button>
+        </div>
+        
+        <div class="pins-grid">
+            <!-- Пин 1 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior design" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">Современный интерьер</div>
+                    <div class="pin-desc">Идеи для оформления гостиной в минималистичном стиле с акцентами в зелёных тонах.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>2.5K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>324</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пин 2 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Healthy food" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">ПП завтраки</div>
+                    <div class="pin-desc">Полезные и вкусные завтраки для правильного питания. Быстро и просто.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>5.1K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>892</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пин 3 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Workspace" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">Организация рабочего места</div>
+                    <div class="pin-desc">Как создать уютное и продуктивное рабочее пространство дома.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>3.7K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>512</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пин 4 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Travel" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">Путешествия по Европе</div>
+                    <div class="pin-desc">Маршруты и лайфхаки для бюджетного путешествия по самым красивым местам Европы.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>8.2K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>1.2K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пин 5 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Food" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">Ужин за 30 минут</div>
+                    <div class="pin-desc">Быстрые и вкусные рецепты для ужина после работы.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>4.3K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>743</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Пин 6 -->
+            <div class="pin-card">
+                <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fashion" class="pin-image">
+                <div class="pin-info">
+                    <div class="pin-title">Модные образы весна-2024</div>
+                    <div class="pin-desc">Актуальные тренды в одежде и аксессуарах на новый сезон.</div>
+                    <div class="pin-stats">
+                        <div class="pin-stat">
+                            <i class="fas fa-eye"></i>
+                            <span>6.5K</span>
+                        </div>
+                        <div class="pin-stat">
+                            <i class="fas fa-heart"></i>
+                            <span>934</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

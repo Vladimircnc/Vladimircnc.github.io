@@ -1,0 +1,33 @@
+
+
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+input {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-width: 5px;
+    border-left: 3px;
+    border-right: 3px;
+    border-style: ridge;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    

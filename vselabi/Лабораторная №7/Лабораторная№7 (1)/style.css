@@ -1,0 +1,79 @@
+body{
+    background: #37D787;
+    background: linear-gradient(135deg, #37D787, #1589F3);
+    height: 1000px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-color: rgb(6, 131, 120);
+    border: 3px solid rgb(0, 65, 95);
+}
+
+.wrap {
+    width: 1200px;
+    height: 700px;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    box-sizing: border-box;
+}
+.img__1 {
+    left: 65%;
+    top: 80px;
+    z-index: 0;
+    border: 4px solid rgb(194, 194, 194);
+}
+.img__2 {
+    left: 50%;
+    top: 200px;
+    z-index: 0;
+    border: 4px solid rgb(151, 129, 104);
+}
+.img__3 {
+    left: 40%;
+    top: 350px;
+    z-index: 0;
+    border: 4px solid rgb(1, 136, 199);
+}
+.img__4 {
+    left: 50%;
+    top: 480px;
+    z-index: 0;
+    border: 4px solid rgb(19, 62, 202);
+}
+.img__5 {
+    left: 65%;
+    top: 600px;
+    z-index: 0;
+    border: 4px solid rgb(170, 168, 32);
+}
+.img__6 {
+    left: 80%;
+    top: 480px;
+    z-index: 0;
+    border: 4px solid rgb(72, 211, 90);
+}
+.img__7 {
+    left: 90%;
+    top: 350px;
+    z-index: 0;
+    border: 4px solid rgb(15, 126, 25);
+}
+.img__8 {
+    left: 80%;
+    top: 200px;
+    z-index: 0;
+    border: 4px solid rgb(134, 134, 134);
+}
+
+.card:hover {
+    z-index: 1;
+    border: 4px solid blue;
+}
